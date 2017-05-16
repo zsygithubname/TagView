@@ -40,10 +40,10 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _height;
+    return 50;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [VMTagsView tagsViewHeightForTitleArray:self.titles andWidth:KScreenWidth - 30];
+    return _height;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     int remainder = indexPath.row % 2;
